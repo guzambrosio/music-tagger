@@ -1911,7 +1911,6 @@ if __name__ == '__main__':
     print('Music Tagger rodando em: ' + url)
     print('Pasta: ' + str(pasta_atual))
     print('Pressione Ctrl+C para parar.')
-    threading.Timer(1, lambda: webbrowser.open(url)).start()
     try:
         server.serve_forever()
     except KeyboardInterrupt:
