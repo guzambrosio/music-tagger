@@ -49,5 +49,4 @@ if [ ! -f "$DIR/music_server.py" ]; then
 fi
 
 # Inicia servidor
-(sleep 1.5 && open "http://localhost:8080") &
 python3 "$DIR/music_server.py" --pasta "$PASTA"
